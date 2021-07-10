@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="1_1080_DUMITRU_RAZVAN_DORIAN.css" />
+    <title>Paint</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- design/functionalitate toolbar -->
+        <div class="toolbar">
+            <!-- tool urile pt desenat -->
+            <a href="#" id="default"><img src="media/brush.png" /></a>
+            <a href="#" id="line"><img src="media/line.png" /></a>
+            <a href="#" id="rectangle"><img src="media/rect.png" /></a>
+            <a href="#" id="circle"><img src="media/circle.png" /></a>
+            <a href="#" id="polygon"><img src="media/poly.png" /></a>
+            <a href="#" id="save"><img src="media/save.png" /></a>
+
+            <!-- selector pt save -->
+            <select id="saveSelect">
+          <option value="0">.png</option>
+          <option value="1">.jpg</option>
+          <option value="2">.svg</option>
+        </select>
+        </div>
+        <!-- al doilea toolbar -->
+        <div class="toolbar">
+            <b><p>Marime Instrument</p></b>
+            <b><p style="padding-left: 60px">Culoare Instrument</p></b>
+            <b><p style="padding-left: 10px">Schimba fundalul</p></b>
+            <b><p style="padding-left: 15px">Umplere forma</p></b>
+            <br />
+            <input type="range" min="5" max="30" value="10" id="toolSize" class="range" />
+            <input type="color" id="toolColor" value="#14248A" class="colorpick" />
+            <input type="color" id="bgColor" value="#14248A" class="colorpick" style="margin-left: 120px" />
+            <input type="checkbox" id="umplereCb" style="margin-left: 120px; margin-top: 10px" />
+        </div>
+        <br />
+        <!-- canvas -->
+        <div class="canvas">
+            <canvas id="myCanvas"></canvas>
+        </div>
+        <p id="nume">Dumitru Razvan Dorian, an III, seria C, grupa 1080</p>
+    </div>
+
+    <script src="1_1080_DUMITRU_RAZVAN_DORIAN.js"></script>
+</body>
+
+</html>
